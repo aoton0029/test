@@ -1,14 +1,13 @@
 import datetime
 import time
-from flask import Flask, request
 import asyncio
-# from quart import Quart, request
+from quart import Quart, request
 import os
 import threading as th
 from waitress import serve
 import sqltest
 
-app = Flask(__name__)
+app = Quart(__name__)
 
 # @app.route('/')
 # def home():
